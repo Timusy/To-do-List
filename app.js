@@ -14,7 +14,7 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todoListDB",{ useNewUrlParser: true , useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://Sumit:Timusy123@cluster0.jgy8g.mongodb.net/todoListDB?retryWrites=true&w=majority",{ useNewUrlParser: true , useUnifiedTopology: true});
 
 var day="";
 const itemsSchema={
